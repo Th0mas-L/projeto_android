@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #296645;
+    --cor1: #35D679;
+    --cor2: #313D5A;
+    --cor3: #73628A;
+    --cor4: #CBC5EA;
+    --cor5: #353831;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, snsa-serif;
+    --fonte-destaque: ;
+    --fonte-android: ;
+}
+
+body {
+    background-color: var(--cor5);
+    font-family: var(--fonte-padrao);
+    margin: 0px;
+}
+
+
+
+header {
+    background: var(--cor2);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 0px;
+    padding: 16px 0px;
+}
+
+nav {
+    display: flex;
+}
+
+nav > a {
+    color: white;
+    width: 25%;
+    padding: 1em;
+    text-decoration: none;
+
+}
+
+nav > a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    min-width: none;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+article > h1 {
+    color: var(--cor4);
+    background-color: var(--cor0);
+    text-align: center;
+    padding: 1em 0px;
+}
+
+h2 {
+    color: var(--cor0);
+    background: linear-gradient(to right, var(--cor1), white);
+    padding: 8px;
+}
+
+article > p  {
+    padding: 0px 10px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.1em;
+}
+
+strong {
+    color: var(--cor3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+p > a {
+    color: var(--cor0);
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+p > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor5);
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+p > a::before {
+    content: '\1f517';
+}
+
+img {
+    margin: auto;
+    display: block;
+}
+
+.video {
+    background-color: var(--cor0);
+    margin: 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+
+    position: relative;
+}
+
+iframe {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+aside {
+    background-color: var(--cor4);
+    border-radius: 10px;
+    padding-bottom: 1em;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    color: white;
+    background-color: var(--cor3);
+    padding: 1em;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > p {
+    padding: 0px 1em;
+}
+
+aside > ul {
+    list-style-type: '\2714  ';
+    list-style-position: inside;
+    columns: 2;
+}
+
+abbr {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--cor2);
+    color: white;
+    text-align: center;
+    padding: 1px;    
+}
+
+footer a {
+    color: white;
+}
